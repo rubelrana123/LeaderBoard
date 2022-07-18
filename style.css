@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+body{
+ background: rgba(243, 241, 255, 1);
+ font-family: 'Poppins', sans-serif;
+
+
+}
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.container {
+  background-color: white;
+   width: 870px;
+   margin:  0 auto;
+   padding: 30px;
+   /* border: 1px solid; */
+   margin-top: 20px;
+   border-radius: 5px;
+}
+
+
+/* Top player style  */
+.top-players{
+  margin-bottom: 30px;
+
+}
+hr{
+  border: 1px solid #D1D1D1;
+  margin-bottom: 30px;
+}
+.players{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-row-gap: 30px;
+}
+.section-title{
+  color: #562eff;
+  font-size: 24px;
+  margin-top: 3px;
+  font-weight: 500;
+
+}
+.player{
+  display: flex;
+  align-items: center;
+}
+.player img{
+  height: 56px;
+  width: 56px;
+}
+.playerName{
+  margin-left: 15px;
+  font-size: 18px;
+}
+
+/* TOp Blogs */
+.blogs{
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2 , 1fr);
+  grid-row-gap: 26px;
+}
+
+.blog .thumbnail img {
+  width: 177px;
+  height: 177px;
+
+}
+.blog{
+  display: flex;
+}
+.blog .blog-info{
+  margin-left: 16px;
+}
+.blog-title{
+  font-size: 20px;
+  width: 168px;
+
+}
+.blog-author{
+  color: #9f9f9f;
+  
+  font-size: 16x;
+
+}
+
+.blog-author a{
+  color: #562EFF;
+  text-decoration: none;
+  font-size: 16px;
+
+
+}
+
+/* latest couse */
+.courses{
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  grid-row-gap: 35px;
+}
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
+}
+.course-info{
+  display: flex;
+  gap: 12px;
+}
+.course-info  .filled{
+  color: gold;
+}
+.course-info .clock-details{
+  align-items: center;
+}
+.course-info .clock-details {
+  display: flex;
+  border: 1px solid red;
+  background-color: rgba(221, 97, 75, 0.371);
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+.course-info .clock-details img{
+  width: 25px;
+  height: 25x;
+
+}
+.course-details  .course-author {
+margin-top: 0px;
+color: blue;
+}
+/* Mobile Device */
+
+@media screen and (max-width :668px) {
+ .container{
+    width: 100%;
+
+  }
+  .players{
+    grid-template-columns: repeat(1, 1fr);
+
+  }
+  .player{
+    flex-direction: column;
+  
+
+  }
+  .blogs {
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .blog{
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+  }
+  .courses{
+    grid-template-columns: repeat(1 , 1fr);
+  }
+  .course{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+}
+/* tablet */
+@media screen and (min-width: 689px) and (max-width : 992px) {
+  .container{
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  
+}
